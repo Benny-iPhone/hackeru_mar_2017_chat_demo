@@ -12,9 +12,11 @@
 		6DB637151E897DAB008D2DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB637131E897DAB008D2DF3 /* Main.storyboard */; };
 		6DB637171E897DAB008D2DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB637161E897DAB008D2DF3 /* Assets.xcassets */; };
 		6DB6371A1E897DAB008D2DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB637181E897DAB008D2DF3 /* LaunchScreen.storyboard */; };
+		C720DA5E5DD6610A5A22958C /* Pods_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2669F93C33D26818E5335CD /* Pods_Chat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C16E2AB1246FC6CBE05A0CC /* Pods-Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chat/Pods-Chat.release.xcconfig"; sourceTree = "<group>"; };
 		6DB6370C1E897DAB008D2DF3 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB6370F1E897DAB008D2DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DB637111E897DAB008D2DF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		6DB637161E897DAB008D2DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DB637191E897DAB008D2DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DB6371B1E897DAB008D2DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3498610956EAB79A56959D7 /* Pods-Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat/Pods-Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		D2669F93C33D26818E5335CD /* Pods_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C720DA5E5DD6610A5A22958C /* Pods_Chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		442E705CFD7D19D2BA0EB214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2669F93C33D26818E5335CD /* Pods_Chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54AB8CCEB04DCA6DD6669935 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3498610956EAB79A56959D7 /* Pods-Chat.debug.xcconfig */,
+				3C16E2AB1246FC6CBE05A0CC /* Pods-Chat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6DB637031E897DAB008D2DF3 = {
 			isa = PBXGroup;
 			children = (
 				6DB6370E1E897DAB008D2DF3 /* Chat */,
 				6DB6370D1E897DAB008D2DF3 /* Products */,
+				54AB8CCEB04DCA6DD6669935 /* Pods */,
+				442E705CFD7D19D2BA0EB214 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB6371E1E897DAB008D2DF3 /* Build configuration list for PBXNativeTarget "Chat" */;
 			buildPhases = (
+				A6AFE753F59318B3C43B5F0E /* [CP] Check Pods Manifest.lock */,
 				6DB637081E897DAB008D2DF3 /* Sources */,
 				6DB637091E897DAB008D2DF3 /* Frameworks */,
 				6DB6370A1E897DAB008D2DF3 /* Resources */,
+				35C145718FD77BCDB4ADDFF7 /* [CP] Embed Pods Frameworks */,
+				FDC4A8CC75CD75E0BB6B7E44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35C145718FD77BCDB4ADDFF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chat/Pods-Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6AFE753F59318B3C43B5F0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC4A8CC75CD75E0BB6B7E44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chat/Pods-Chat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DB637081E897DAB008D2DF3 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		6DB6371F1E897DAB008D2DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3498610956EAB79A56959D7 /* Pods-Chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Chat/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		6DB637201E897DAB008D2DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C16E2AB1246FC6CBE05A0CC /* Pods-Chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Chat/Info.plist;
