@@ -59,7 +59,9 @@ class ChatViewController: JSQMessagesViewController {
         
         messages.append(msg)
         
-        self.finishReceivingMessage()
+        JSQSystemSoundPlayer.jsq_playMessageSentSound()
+        
+        finishSendingMessage() 
         
     }
     
